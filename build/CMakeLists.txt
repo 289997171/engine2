@@ -1,4 +1,4 @@
-# Tencent is pleased to support the open source community by making xLua available.
+﻿# Tencent is pleased to support the open source community by making xLua available.
 # Copyright (C) 2016 THL A29 Limited, a Tencent company. All rights reserved.
 # Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 # http://opensource.org/licenses/MIT
@@ -106,17 +106,17 @@ set (THIRDPART_SRC ${THIRDPART_SRC} ${LPEG_SRC})
 
 
 #begin checkVM 注意，如果编译Windows平台，可以注释或删除
-set ( checkVM_SRC
-    checkVM/anti_emulator.c
-)
-set_property(
-    SOURCE ${checkVM_SRC}
-    APPEND
-    PROPERTY COMPILE_DEFINITIONS
-    LUA_LIB
-)
-list(APPEND THIRDPART_INC  checkVM)
-set (THIRDPART_SRC ${THIRDPART_SRC} ${checkVM_SRC})
+#set ( checkVM_SRC
+#   checkVM/anti_emulator.c
+#)
+#set_property(
+#    SOURCE ${checkVM_SRC}
+#    APPEND
+#    PROPERTY COMPILE_DEFINITIONS
+#    LUA_LIB
+#)
+#list(APPEND THIRDPART_INC  checkVM)
+#set (THIRDPART_SRC ${THIRDPART_SRC} ${checkVM_SRC})
 #end checkVM
 
 
